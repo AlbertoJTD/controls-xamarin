@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.PresentationViewDemo">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView BackgroundColor="DarkGreen" HeightRequest="100" />
+
+                <Label Text="XAMARIN"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center" />
+
+                <Ellipse Fill="Red"
+                     HeightRequest="200"
+                     WidthRequest="200"
+                     HorizontalOptions="Center"
+                     Stroke="yellow"
+                     StrokeThickness="6"/>
+
+                <Line Stroke="Black"
+                  X1="0"
+                  Y1="0"
+                  X2="100"
+                  Y2="50"
+                  StrokeThickness="10"/>
+
+                <Rectangle Fill="DarkRed"
+                       Stroke="Black"
+                       StrokeThickness="5"
+                       HeightRequest="50"
+                       WidthRequest="150"
+                       HorizontalOptions="End"
+                       RadiusX="10"
+                       RadiusY="10"/>
+
+                <Polygon Fill="LightBlue"
+                     Points="40,10 70,80 10,50"
+                     Stroke="DarkBlue"
+                     StrokeThickness="5"/>
+
+                <Polygon Fill="Yellow"
+                     Points="40,10 70,80 10,50"
+                     Stroke="DarkBlue"
+                     StrokeDashArray="1,1"
+                     StrokeDashOffset="6"
+                     StrokeThickness="5"/>
+
+                <Polyline Points="0,0 10,30 16,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
+                      Stroke="Red" />
+
+                <Path Aspect="Uniform"
+                  Data="M 10,100 L 100,100 100,50Z"
+                  HorizontalOptions="Center"
+                  Stroke="Black" />
+
+                <WebView HeightRequest="500"
+                     Source="https://academia.elcamino.dev"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
