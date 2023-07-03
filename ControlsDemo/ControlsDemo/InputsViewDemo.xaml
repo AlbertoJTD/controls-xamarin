@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.InputsViewDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <CheckBox IsChecked="True" />
+
+            <Slider x:Name="sliderControl"
+                    Minimum="0"
+                    Maximum="10"
+                    MinimumTrackColor="Yellow"
+                    MaximumTrackColor="Green"
+                    ThumbColor="DarkRed"
+                    ValueChanged="slider_ValueChanged"/>
+
+            <Label x:Name="lbSlider" />
+
+            <Stepper x:Name="stepper"
+                     ValueChanged="stepper_ValueChanged"
+                     Maximum="10"
+                     Minimum="0"
+                     Increment="2"/>
+
+            <Switch Toggled="Switch_Toggled" />
+
+            <DatePicker />
+
+            <TimePicker />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
