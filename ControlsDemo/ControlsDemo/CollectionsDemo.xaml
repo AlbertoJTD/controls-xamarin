@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.CollectionsDemo">
+
+    <!--<StackLayout>
+        <CarouselView IndicatorView="indicatorView">
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>mono1</x:String>
+                    <x:String>mono2</x:String>
+                    <x:String>mono3</x:String>
+                    <x:String>mono4</x:String>
+                    <x:String>mono5</x:String>
+                    <x:String>mono6</x:String>
+                    <x:String>mono7</x:String>
+                    <x:String>mono8</x:String>
+                    <x:String>mono9</x:String>
+                </x:Array>
+            </CarouselView.ItemsSource>
+
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame Margin="20"
+                           BorderColor="DarkGray"
+                           CornerRadius="5"
+                           HasShadow="True"
+                           HeightRequest="100"
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand">
+                            <Label Text="{Binding .}" />
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <IndicatorView x:Name="indicatorView"
+                   HorizontalOptions="Center"
+                   IndicatorColor="LightGray"
+                   SelectedIndicatorColor="DarkGray" />
+    </StackLayout>-->
+
+
+
+    <!--<ListView HasUnevenRows="True">
+        <ListView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>mono1</x:String>
+                <x:String>mono2</x:String>
+                <x:String>mono3</x:String>
+                <x:String>mono4</x:String>
+                <x:String>mono5</x:String>
+                <x:String>mono6</x:String>
+                <x:String>mono7</x:String>
+                <x:String>mono8</x:String>
+                <x:String>mono9</x:String>
+            </x:Array>
+        </ListView.ItemsSource>
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Frame Margin="20"
+                               BorderColor="DarkGray"
+                              CornerRadius="5"
+                               HasShadow="True"
+                               HeightRequest="100"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+                            <Label Text="{Binding .}" />
+                        </Frame>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
+
+
+    <!--<CollectionView SelectionMode="Multiple">
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>mono1</x:String>
+                <x:String>mono2</x:String>
+                <x:String>mono3</x:String>
+                <x:String>mono4</x:String>
+                <x:String>mono5</x:String>
+                <x:String>mono6</x:String>
+                <x:String>mono7</x:String>
+                <x:String>mono8</x:String>
+                <x:String>mono9</x:String>
+            </x:Array>
+        </CollectionView.ItemsSource>
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Frame Margin="20"
+                            BorderColor="DarkGray"
+                            CornerRadius="5"
+                            HasShadow="True"
+                            HeightRequest="100"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+                        <Label Text="{Binding .}" />
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>-->
+
+    <!--<Picker VerticalOptions="Center">
+        <Picker.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>mono1</x:String>
+                <x:String>mono2</x:String>
+                <x:String>mono3</x:String>
+                <x:String>mono4</x:String>
+                <x:String>mono5</x:String>
+                <x:String>mono6</x:String>
+                <x:String>mono7</x:String>
+                <x:String>mono8</x:String>
+                <x:String>mono9</x:String>
+            </x:Array>
+        </Picker.ItemsSource>
+    </Picker>-->
+
+    <TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="First Section">
+                <TextCell Detail="TextCell Detail" Text="TextCell" />
+                <EntryCell Label="Entry Label" Text="EntryCell" />
+                <SwitchCell Text="SwitchCell Text" />
+                <ImageCell Detail="ImageCell Detail"
+                           ImageSource="formacion.png"
+                           Text="ImageCell Text"/>
+            </TableSection>
+
+            <TableSection Title="Second Section">
+                <TextCell Detail="TextCell Detail" Text="TextCell" />
+                <EntryCell Label="Entry Label" Text="EntryCell" />
+                <SwitchCell Text="SwitchCell Text" />
+                <ImageCell Detail="ImageCell Detail"
+                           ImageSource="formacion.png"
+                           Text="ImageCell Text"/>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>

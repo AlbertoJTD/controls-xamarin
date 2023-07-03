@@ -10,7 +10,7 @@ namespace ControlsDemo
 		{
 			InitializeComponent();
 
-			MainPage = new ActivityIndicatorsDemo();
+			MainPage = new CollectionsDemo();
 		}
 
 		protected override void OnStart()
