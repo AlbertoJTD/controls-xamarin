@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.ActivityIndicatorsDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator IsRunning="True"
+                               Color="Blue"/>
+
+            <ProgressBar Progress="0.2" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

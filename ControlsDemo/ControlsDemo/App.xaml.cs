@@ -10,7 +10,7 @@ namespace ControlsDemo
 		{
 			InitializeComponent();
 
-			MainPage = new TextViewDemo();
+			MainPage = new ActivityIndicatorsDemo();
 		}
 
 		protected override void OnStart()
