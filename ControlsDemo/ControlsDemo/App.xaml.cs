@@ -10,7 +10,7 @@ namespace ControlsDemo
 		{
 			InitializeComponent();
 
-			MainPage = new PresentationViewDemo();
+			MainPage = new CommandsViewDemo();
 		}
 
 		protected override void OnStart()

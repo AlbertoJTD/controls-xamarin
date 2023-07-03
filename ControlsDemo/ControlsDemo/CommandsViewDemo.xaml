@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.CommandsViewDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnTest" Text="Click me!" Clicked="btnTest_Clicked" />
+
+            <ImageButton Source="formacion.png" Clicked="btnTest_Clicked" />
+
+            <!--<Image Source="formacion.png" />-->
+
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="Option 1" GroupName="group1" />
+            <RadioButton Content="Option 2" GroupName="group1"/>
+            <RadioButton Content="Option 3" GroupName="group2" />
+            <RadioButton IsChecked="True" Content="Option 4" GroupName="group2" />
+
+            <SearchBar x:Name="SearchControl" SearchButtonPressed="SearchControl_SearchButtonPressed" />
+
+            <SwipeView>
+                <!-- Left options -->
+                <SwipeView.LeftItems>
+                    <SwipeItems>
+                        <SwipeItem BackgroundColor="LightCoral"
+                                   IconImageSource="formacion.png"
+                                   Invoked="SwipeItem_Invoked"
+                                   Text="Favorite"/>
+                        <SwipeItem BackgroundColor="LightGreen"
+                                   IconImageSource="formacion.png"
+                                   Invoked="SwipeItem_Invoked"
+                                   Text="Delete" />
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+
+                <!-- Right options -->
+                <SwipeView.RightItems>
+                    <SwipeItems>
+                        <SwipeItem BackgroundColor="Orange"
+                                   IconImageSource="formacion.png"
+                                   Text="Save"/>
+                    </SwipeItems>
+                </SwipeView.RightItems>
+
+                <!-- Main content -->
+               <Grid BackgroundColor="LightGray"
+                      HeightRequest="60"
+                      WidthRequest="300">
+                    <Label HorizontalOptions="Center"
+                           Text="Swipe from left to right ->"
+                           VerticalOptions="Center" />
+                </Grid>
+            </SwipeView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
